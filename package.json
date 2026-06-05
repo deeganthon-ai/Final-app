@@ -8,15 +8,15 @@
     "android": "expo run:android",
     "web": "expo start --web",
     "doctor": "npx expo-doctor",
-    "prebuild-check": "node -e \"const p=require('./package.json'); if(p.dependencies['react-native-health-connect']) process.exit(1); console.log('Prebuild checks passed: no Health Connect, Expo project ready');\""
+    "prebuild-check": "node -e \"const p=require('./package.json'); if(p.dependencies['react-native-health-connect']) process.exit(1); console.log('Prebuild check passed')\""
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "1.23.1",
-    "expo": "~51.0.39",
-    "expo-camera": "~15.0.16",
-    "expo-status-bar": "~1.12.1",
-    "react": "18.2.0",
-    "react-native": "0.74.5"
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "expo": "~54.0.0",
+    "expo-camera": "~16.1.11",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
