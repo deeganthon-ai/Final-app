@@ -1,0 +1,25 @@
+{
+  "name": "homefit-pro-9-plus",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "web": "expo start --web",
+    "doctor": "npx expo-doctor",
+    "prebuild-check": "node -e \"const p=require('./package.json'); if(p.dependencies['react-native-health-connect']) process.exit(1); console.log('Prebuild checks passed: no Health Connect, Expo project ready');\""
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "expo": "~51.0.39",
+    "expo-camera": "~15.0.16",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "eas-cli": "^13.4.2"
+  }
+}
