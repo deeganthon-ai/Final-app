@@ -4,10 +4,10 @@
     "slug": "homefit-pro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./Icon.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./Icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#07101f"
     },
@@ -17,7 +17,7 @@
       "package": "com.deeganthon.homefitpro",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./Icon.png",
         "backgroundColor": "#07101f"
       },
       "permissions": ["CAMERA"]
