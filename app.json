@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "homefit-nutrition",
-    "slug": "homefit-nutrition",
+    "name": "HomeFit Pro",
+    "slug": "homefit-pro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,7 +14,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": { "supportsTablet": false },
     "android": {
-      "package": "com.homefit.pro9plus",
+      "package": "com.deeganthon.homefitpro",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
