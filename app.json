@@ -4,10 +4,10 @@
     "slug": "homefit-nutrition",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./Icon.png",
+    "icon": "./icon.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./Icon.png",
+      "image": "./icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#07101f"
     },
@@ -17,7 +17,7 @@
       "package": "com.deeganthon.homefitpro",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./Icon.png",
+        "foregroundImage": "./icon.png",
         "backgroundColor": "#07101f"
       },
       "permissions": ["CAMERA"]
