@@ -121,8 +121,18 @@ const baseExercises = [
 ];
 
 const defaultState = {
-  tab:'Dashboard', profile:{ goal:'Recomp', calories:2300, protein:180, carbs:220, fat:75, weight:92, height:178, age:43 },
-  equipment:[{id:'body',name:'Bodyweight',enabled:true,maxKg:0},{id:'db',name:'Dumbbells',enabled:true,maxKg:25},{id:'bb',name:'Barbell',enabled:true,maxKg:100},{id:'tri',name:'Tricep Bar',enabled:true,maxKg:40},{id:'york',name:'York Multi Gym',enabled:true,maxKg:70},{id:'bench',name:'Bench',enabled:true,maxKg:0}],
+  tab:'Dashboard', profile:{ goal:'Recomp', calories:2300, protein:180, carbs:220, fat:75, weight:81, height:170, age:46 },
+  equipment:[
+{id:'body',name:'Bodyweight',enabled:true,maxKg:0},
+{id:'db',name:'Dumbbells',enabled:true,maxKg:25},
+{id:'bb',name:'Barbell',enabled:true,maxKg:100},
+{id:'stdbar',name:'5ft Standard Barbell',enabled:true,maxKg:50},
+{id:'tri',name:'Tricep Bar',enabled:true,maxKg:40},
+{id:'kb',name:'Kettlebells',enabled:true,maxKg:32},
+{id:'york',name:'York Multi Gym',enabled:true,maxKg:70},
+{id:'tm',name:'Treadmill',enabled:true,maxKg:0},
+{id:'bench',name:'Bench',enabled:true,maxKg:0}
+],
   meals:[], favourites:starterFoods, savedMeals:[], recentFoods:[], progress:[], workouts:[], customExercises:[], water:[], waterTarget:2500,
   recovery:{ chest:3, back:3, legs:3, shoulders:3, arms:3, energy:3, sleep:3, soreness:3, stress:3 }, backupText:''
 };
