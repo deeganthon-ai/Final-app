@@ -141,7 +141,7 @@ export default function App(){
 
   const mealsToday=state.meals.filter(m=>m.date===today()); const totals=macroTotals(mealsToday); const enabled=state.equipment.filter(e=>e.enabled).map(e=>e.name); const allExercises=[...baseExercises,...state.customExercises];
   const nextDay=['Push','Pull','Legs'][state.workouts.length%3]; const prs=useMemo(()=>getPRs(state.workouts),[state.workouts]); const weeklyVolume=volumeLast7(state.workouts); const waterToday=sum(state.water.filter(w=>w.date===today()).map(w=>w.ml));
-  const generated=useMemo(()=>allExercises.filter(e=>e.day===nextDay).filter(e=>e.equipment.every(eq=>enabled.includes(eq))).slice(0,6).map(e=>({...e,suggestedKg:suggestKg(e,state.workouts)})),[nextDay,enabled.join('|'),state.workouts.length,state.customExercises.length]);
+  const generated=useMemo(()=>allExercises.filter(e=>e.day===nextDay).filter(e=>e.equipment.every(eq=>enabled.includes(eq))).slice(0,8).map(e=>({...e,suggestedKg:suggestKg(e,state.workouts)})),[nextDay,enabled.join('|'),state.workouts.length,state.customExercises.length]);
   useEffect(()=>setWorkoutDraft(generated.map(e=>({...e,setsDone:Array.from({length:e.sets},()=>({kg:e.suggestedKg,reps:e.targetReps,rest:e.rest}))}))),[generated.map(e=>e.name+e.suggestedKg).join('|')]);
   const draftVolume=workoutVolume(workoutDraft); const week=getWeek(state); const streak=getStreak(state); const coach=getCoach(state,totals,week); const exerciseDatabase=allExercises.filter(e=>(muscleFilter==='all'||e.muscle===muscleFilter)).filter(e=>(e.name+' '+e.day+' '+e.muscle+' '+e.equipment.join(' ')).toLowerCase().includes(exerciseQuery.toLowerCase())).slice(0,150);
 
